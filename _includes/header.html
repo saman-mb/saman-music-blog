@@ -3,7 +3,12 @@
 
 <header class="site-header">
   <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <div class="header-left">
+      <a class="site-logo" href="{{ "/" | relative_url }}">
+        <img src="{{ "/assets/css/images/elektron_logo_400x400.jpg" | relative_url }}" alt="Elektron Logo" />
+      </a>
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </div>
 
     {%- if page_paths -%}
       <nav class="site-nav">
