@@ -1,0 +1,81 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Jekyll: Serve",
+      "type": "shell",
+      "command": "bundle",
+      "args": ["exec", "jekyll", "serve", "--watch", "--drafts"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "detail": "Start Jekyll development server with live reload"
+    },
+    {
+      "label": "Jekyll: Build",
+      "type": "shell",
+      "command": "bundle",
+      "args": ["exec", "jekyll", "build"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "detail": "Build Jekyll site for production"
+    },
+    {
+      "label": "Bundle: Install",
+      "type": "shell",
+      "command": "bundle",
+      "args": ["install"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "detail": "Install Ruby dependencies"
+    },
+    {
+      "label": "Setup: Development Environment",
+      "type": "shell",
+      "command": "./dev-setup.sh",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "detail": "Run the complete development setup script"
+    }
+  ]
+}

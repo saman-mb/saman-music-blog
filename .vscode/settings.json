@@ -1,0 +1,34 @@
+{
+  "github.copilot.chat.experimental.modelContextProtocol.enabled": true,
+  "github.copilot.chat.experimental.modelContextProtocol.servers": {
+    "digitakt-guides": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem"],
+      "env": {
+        "ALLOWED_DIRECTORIES": "/Users/saman/digitakt-guides"
+      }
+    }
+  },
+  "files.associations": {
+    "*.md": "markdown"
+  },
+  "markdown.preview.breaks": true,
+  "markdown.preview.linkify": true,
+  "editor.wordWrap": "on",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "emmet.includeLanguages": {
+    "markdown": "html"
+  },
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "yaml.schemas": {
+    "https://json.schemastore.org/jekyll.json": "_config.yml"
+  }
+}

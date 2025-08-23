@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "yzhang.markdown-all-in-one",
+    "redhat.vscode-yaml",
+    "bierner.markdown-mermaid",
+    "shd101wyy.markdown-preview-enhanced",
+    "grapecity.gc-excelviewer",
+    "formulahendry.code-runner",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-json",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

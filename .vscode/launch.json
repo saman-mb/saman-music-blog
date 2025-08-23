@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Preview in Simple Browser",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/http-server",
+      "args": ["${workspaceFolder}/_site", "-p", "4000"],
+      "console": "integratedTerminal",
+      "preLaunchTask": "Jekyll: Build"
+    }
+  ]
+}
