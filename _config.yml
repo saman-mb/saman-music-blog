@@ -1,0 +1,49 @@
+# Site settings
+title: "Digitakt Guides"
+description: "Comprehensive how-to guides for the Elektron Digitakt"
+baseurl: "/digitakt-guides"
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections for better organization
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+
+# Default layouts for different content types
+defaults:
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Tag pages configuration
+tag_page_layout: tag
+tag_page_dir: tags
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,0 +1,237 @@
+---
+---
+
+@import "minima";
+
+/* Custom styles for Digitakt Guides */
+
+/* Category grid layout */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.category-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-card h3 {
+  margin-top: 0;
+}
+
+.category-card h3 a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.category-card h3 a:hover {
+  text-decoration: underline;
+}
+
+/* Guide metadata styling */
+.guide-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+}
+
+.guide-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.guide-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Difficulty badges */
+.difficulty {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.difficulty-beginner {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.difficulty-intermediate {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.difficulty-advanced {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Duration and category badges */
+.duration, .category {
+  padding: 0.25rem 0.5rem;
+  background-color: #e1e4e8;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+/* Tag styling */
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: #0366d6;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #0250a3;
+  color: white;
+  text-decoration: none;
+}
+
+/* Tag cloud */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-cloud .tag {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Guide preview cards */
+.guide-preview {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: box-shadow 0.2s ease;
+}
+
+.guide-preview:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guide-preview h3 {
+  margin-top: 0;
+}
+
+.guide-preview h3 a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.guide-preview h3 a:hover {
+  text-decoration: underline;
+}
+
+/* Guide content styling */
+.guide-header {
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.guide-title {
+  margin-bottom: 1rem;
+}
+
+.guide-description {
+  font-size: 1.1rem;
+  color: #586069;
+  margin: 1rem 0;
+}
+
+.prerequisites, .equipment {
+  background-color: #f6f8fa;
+  border-left: 4px solid #0366d6;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.prerequisites h3, .equipment h3 {
+  margin-top: 0;
+  color: #0366d6;
+}
+
+/* Related guides */
+.related-guides {
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+.related-guides h3 {
+  margin-top: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .guide-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .tag-cloud {
+    justify-content: center;
+  }
+}
+
+/* Lead text styling */
+.lead {
+  font-size: 1.2rem;
+  color: #586069;
+  margin-bottom: 2rem;
+}
+
+/* Guide list styling */
+.guide-list {
+  list-style: none;
+  padding: 0;
+}
+
+.guide-list li {
+  border-bottom: 1px solid #e1e4e8;
+  padding: 1rem 0;
+}
+
+.guide-list li:last-child {
+  border-bottom: none;
+}
+
+.guide-list .tags {
+  color: #586069;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
