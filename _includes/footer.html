@@ -1,30 +1,33 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
+<footer class="site-footer">
   <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
-        <ul class="contact-list">
-          <li class="p-name">{{ site.title | escape }}</li>
-          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>{{ site.title | escape }}</h3>
         <p>{{ site.description | escape }}</p>
       </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="{{ "/" | relative_url }}">Home</a></li>
+          <li><a href="{{ "/sampling/" | relative_url }}">Sampling</a></li>
+          <li><a href="{{ "/beat-making/" | relative_url }}">Beat Making</a></li>
+          <li><a href="{{ "/tags/uk-drill/" | relative_url }}">UK Drill</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul class="footer-links">
+          <li><a href="{{ "/CONTRIBUTING.html" | relative_url }}">Contributing</a></li>
+          <li><a href="{{ 'feed.xml' | relative_url }}">RSS Feed</a></li>
+          <li><a href="https://github.com">GitHub</a></li>
+        </ul>
+      </div>
     </div>
-
-    <div class="social-links">
-      {%- include social.html -%}
+    
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. Made for Digitakt producers worldwide.</p>
     </div>
-
   </div>
-
 </footer>
