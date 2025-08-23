@@ -1,20 +1,20 @@
 ---
 ---
 
-/* Digitakt Guides - Hardware-Inspired Styling */
-/* Complete custom theme inspired by Elektron Digitakt */
+/* Elektron Guides - Hardware-Inspired Styling */
+/* Complete custom theme inspired by Elektron instruments */
 
 /* Color Variables */
 :root {
-  --digitakt-black: #1a1a1a;
-  --digitakt-dark-grey: #2d2d2d;
-  --digitakt-medium-grey: #4a4a4a;
-  --digitakt-light-grey: #6a6a6a;
-  --digitakt-orange: #ff9500;
-  --digitakt-orange-hover: #e6850e;
-  --digitakt-orange-light: #ffaa33;
-  --digitakt-white: #f5f5f5;
-  --digitakt-accent: #00d4ff;
+  --elektron-black: #1a1a1a;
+  --elektron-dark-grey: #2d2d2d;
+  --elektron-medium-grey: #4a4a4a;
+  --elektron-light-grey: #6a6a6a;
+  --elektron-orange: #ff9500;
+  --elektron-orange-hover: #e6850e;
+  --elektron-orange-light: #ffaa33;
+  --elektron-white: #f5f5f5;
+  --elektron-accent: #00d4ff;
 }
 
 /* Reset and Base Styles */
@@ -25,8 +25,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: var(--digitakt-black);
-  color: var(--digitakt-white);
+  background-color: var(--elektron-black);
+  color: var(--elektron-white);
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   font-size: 16px;
@@ -40,7 +40,7 @@ html, body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5rem;
-  border-bottom: 3px solid var(--digitakt-orange);
+  border-bottom: 3px solid var(--elektron-orange);
   padding-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -56,53 +56,53 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: var(--digitakt-orange);
-  border-left: 4px solid var(--digitakt-orange);
+  color: var(--elektron-orange);
+  border-left: 4px solid var(--elektron-orange);
   padding-left: 1rem;
   margin-top: 3rem;
 }
 
 h3 {
   font-size: 1.5rem;
-  color: var(--digitakt-accent);
+  color: var(--elektron-accent);
 }
 
 p {
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
   margin-bottom: 1rem;
 }
 
 /* Links */
 a {
-  color: var(--digitakt-orange);
+  color: var(--elektron-orange);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--digitakt-orange-hover);
+  color: var(--elektron-orange-hover);
   text-decoration: underline;
 }
 
 a:visited {
-  color: var(--digitakt-orange-light);
+  color: var(--elektron-orange-light);
 }
 
 /* Lists */
 ul, ol {
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
   padding-left: 2rem;
 }
 
 li {
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
   margin-bottom: 0.5rem;
 }
 
 /* Header */
 .site-header {
-  background-color: var(--digitakt-dark-grey);
-  border-bottom: 3px solid var(--digitakt-orange);
+  background-color: var(--elektron-dark-grey);
+  border-bottom: 3px solid var(--elektron-orange);
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -135,16 +135,16 @@ li {
   width: 40px;
   border-radius: 4px;
   object-fit: cover;
-  border: 2px solid var(--digitakt-orange);
+  border: 2px solid var(--elektron-orange);
   transition: border-color 0.2s ease;
 }
 
 .site-logo:hover img {
-  border-color: var(--digitakt-orange-hover);
+  border-color: var(--elektron-orange-hover);
 }
 
 .site-title {
-  color: var(--digitakt-orange);
+  color: var(--elektron-orange);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -154,7 +154,7 @@ li {
 }
 
 .site-title:hover {
-  color: var(--digitakt-orange-hover);
+  color: var(--elektron-orange-hover);
 }
 
 .site-nav {
@@ -166,7 +166,7 @@ li {
 }
 
 .site-nav .page-link {
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
   padding: 8px 12px;
   border: 2px solid transparent;
   border-radius: 6px;
@@ -180,8 +180,8 @@ li {
 }
 
 .site-nav .page-link:hover {
-  color: var(--digitakt-orange);
-  border-color: var(--digitakt-orange);
+  color: var(--elektron-orange);
+  border-color: var(--elektron-orange);
   background-color: rgba(255, 149, 0, 0.1);
   text-decoration: none;
 }
@@ -258,17 +258,17 @@ li {
 
 /* Main Content */
 .page-content {
-  background-color: var(--digitakt-black);
+  background-color: var(--elektron-black);
   min-height: calc(100vh - 200px);
   padding: 2rem 0;
 }
 
 /* Footer */
 .site-footer {
-  background-color: var(--digitakt-dark-grey);
-  border-top: 3px solid var(--digitakt-orange);
+  background-color: var(--elektron-dark-grey);
+  border-top: 3px solid var(--elektron-orange);
   padding: 3rem 0 1rem;
-  color: var(--digitakt-light-grey);
+  color: var(--elektron-light-grey);
   margin-top: 4rem;
 }
 
@@ -280,12 +280,12 @@ li {
 }
 
 .footer-section h3 {
-  color: var(--digitakt-orange);
+  color: var(--elektron-orange);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid var(--digitakt-medium-grey);
+  border-bottom: 2px solid var(--elektron-medium-grey);
   padding-bottom: 0.5rem;
 }
 
@@ -300,7 +300,7 @@ li {
 }
 
 .footer-links a {
-  color: var(--digitakt-light-grey);
+  color: var(--elektron-light-grey);
   text-decoration: none;
   transition: color 0.2s ease;
   padding: 0.2rem 0;
@@ -308,18 +308,18 @@ li {
 }
 
 .footer-links a:hover {
-  color: var(--digitakt-orange);
+  color: var(--elektron-orange);
   text-decoration: none;
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--digitakt-medium-grey);
+  border-top: 1px solid var(--elektron-medium-grey);
   padding-top: 1rem;
   text-align: center;
 }
 
 .footer-bottom p {
-  color: var(--digitakt-light-grey);
+  color: var(--elektron-light-grey);
   font-size: 0.9rem;
   margin: 0;
 }
@@ -335,8 +335,8 @@ li {
 }
 
 .category-card {
-  background: linear-gradient(145deg, var(--digitakt-dark-grey), var(--digitakt-medium-grey));
-  border: 2px solid var(--digitakt-medium-grey);
+  background: linear-gradient(145deg, var(--elektron-dark-grey), var(--elektron-medium-grey));
+  border: 2px solid var(--elektron-medium-grey);
   border-radius: 12px;
   padding: 2rem;
   transition: all 0.3s ease;
@@ -351,18 +351,18 @@ li {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--digitakt-orange), var(--digitakt-accent));
+  background: linear-gradient(90deg, var(--elektron-orange), var(--elektron-accent));
 }
 
 .category-card:hover {
   transform: translateY(-5px);
-  border-color: var(--digitakt-orange);
+  border-color: var(--elektron-orange);
   box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
 }
 
 .category-card h3 {
   margin-top: 0;
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -370,18 +370,18 @@ li {
 
 .category-card h3 a {
   text-decoration: none;
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
 .category-card h3 a:hover {
-  color: var(--digitakt-orange);
+  color: var(--elektron-orange);
 }
 
 .category-card p {
-  color: var(--digitakt-light-grey);
+  color: var(--elektron-light-grey);
   font-size: 0.95rem;
 }
 
@@ -393,9 +393,9 @@ li {
   align-items: center;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: linear-gradient(135deg, var(--digitakt-dark-grey), var(--digitakt-medium-grey));
+  background: linear-gradient(135deg, var(--elektron-dark-grey), var(--elektron-medium-grey));
   border-radius: 10px;
-  border: 1px solid var(--digitakt-medium-grey);
+  border: 1px solid var(--elektron-medium-grey);
   position: relative;
 }
 
@@ -406,7 +406,7 @@ li {
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--digitakt-orange);
+  background: var(--elektron-orange);
 }
 
 .guide-info {
@@ -441,9 +441,9 @@ li {
 }
 
 .difficulty-intermediate {
-  background: linear-gradient(135deg, var(--digitakt-orange), var(--digitakt-orange-hover));
+  background: linear-gradient(135deg, var(--elektron-orange), var(--elektron-orange-hover));
   color: #000;
-  border-color: var(--digitakt-orange);
+  border-color: var(--elektron-orange);
 }
 
 .difficulty-advanced {
@@ -455,11 +455,11 @@ li {
 /* Duration and category badges */
 .duration, .category {
   padding: 0.4rem 0.8rem;
-  background: var(--digitakt-medium-grey);
-  color: var(--digitakt-white);
+  background: var(--elektron-medium-grey);
+  color: var(--elektron-white);
   border-radius: 15px;
   font-size: 0.8rem;
-  border: 1px solid var(--digitakt-light-grey);
+  border: 1px solid var(--elektron-light-grey);
   font-weight: 500;
 }
 
@@ -467,7 +467,7 @@ li {
 .tag {
   display: inline-block;
   padding: 0.3rem 0.8rem;
-  background: linear-gradient(135deg, var(--digitakt-orange), var(--digitakt-orange-hover));
+  background: linear-gradient(135deg, var(--elektron-orange), var(--elektron-orange-hover));
   color: #000;
   text-decoration: none;
   border-radius: 8px;
@@ -476,12 +476,12 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.3px;
   transition: all 0.2s ease;
-  border: 2px solid var(--digitakt-orange);
+  border: 2px solid var(--elektron-orange);
 }
 
 .tag:hover {
-  background: linear-gradient(135deg, var(--digitakt-accent), #00b8e6);
-  border-color: var(--digitakt-accent);
+  background: linear-gradient(135deg, var(--elektron-accent), #00b8e6);
+  border-color: var(--elektron-accent);
   color: #000;
   text-decoration: none;
   transform: translateY(-1px);
@@ -494,9 +494,9 @@ li {
   gap: 0.8rem;
   margin: 2rem 0;
   padding: 1.5rem;
-  background: var(--digitakt-dark-grey);
+  background: var(--elektron-dark-grey);
   border-radius: 10px;
-  border: 1px solid var(--digitakt-medium-grey);
+  border: 1px solid var(--elektron-medium-grey);
 }
 
 .tag-cloud .tag {
@@ -506,8 +506,8 @@ li {
 
 /* Guide preview cards - hardware panel inspired */
 .guide-preview {
-  background: linear-gradient(135deg, var(--digitakt-dark-grey), var(--digitakt-medium-grey));
-  border: 2px solid var(--digitakt-medium-grey);
+  background: linear-gradient(135deg, var(--elektron-dark-grey), var(--elektron-medium-grey));
+  border: 2px solid var(--elektron-medium-grey);
   border-radius: 12px;
   padding: 2rem;
   margin: 1.5rem 0;
@@ -523,12 +523,12 @@ li {
   left: 0;
   width: 4px;
   height: 100%;
-  background: var(--digitakt-orange);
+  background: var(--elektron-orange);
   transition: width 0.3s ease;
 }
 
 .guide-preview:hover {
-  border-color: var(--digitakt-orange);
+  border-color: var(--elektron-orange);
   transform: translateX(5px);
   box-shadow: -5px 5px 20px rgba(255, 107, 53, 0.2);
 }
@@ -539,29 +539,29 @@ li {
 
 .guide-preview h3 {
   margin-top: 0;
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
   font-size: 1.3rem;
 }
 
 .guide-preview h3 a {
   text-decoration: none;
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
 }
 
 .guide-preview h3 a:hover {
-  color: var(--digitakt-orange);
+  color: var(--elektron-orange);
 }
 
 .guide-preview p {
-  color: var(--digitakt-light-grey);
+  color: var(--elektron-light-grey);
 }
 
 /* Guide content styling */
 .guide-header {
-  border-bottom: 3px solid var(--digitakt-orange);
+  border-bottom: 3px solid var(--elektron-orange);
   padding-bottom: 2rem;
   margin-bottom: 3rem;
-  background: linear-gradient(135deg, var(--digitakt-dark-grey), var(--digitakt-medium-grey));
+  background: linear-gradient(135deg, var(--elektron-dark-grey), var(--elektron-medium-grey));
   padding: 2rem;
   border-radius: 12px;
   margin-top: 2rem;
@@ -569,40 +569,40 @@ li {
 
 .guide-title {
   margin-bottom: 1rem;
-  color: var(--digitakt-white);
+  color: var(--elektron-white);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .guide-description {
   font-size: 1.2rem;
-  color: var(--digitakt-light-grey);
+  color: var(--elektron-light-grey);
   margin: 1rem 0;
   font-style: italic;
 }
 
 /* Prerequisites and equipment - panel styling */
 .prerequisites, .equipment {
-  background: linear-gradient(135deg, var(--digitakt-dark-grey), var(--digitakt-medium-grey));
-  border-left: 6px solid var(--digitakt-orange);
+  background: linear-gradient(135deg, var(--elektron-dark-grey), var(--elektron-medium-grey));
+  border-left: 6px solid var(--elektron-orange);
   border-radius: 8px;
   padding: 1.5rem;
   margin: 2rem 0;
-  border-top: 1px solid var(--digitakt-medium-grey);
-  border-bottom: 1px solid var(--digitakt-medium-grey);
-  border-right: 1px solid var(--digitakt-medium-grey);
+  border-top: 1px solid var(--elektron-medium-grey);
+  border-bottom: 1px solid var(--elektron-medium-grey);
+  border-right: 1px solid var(--elektron-medium-grey);
 }
 
 .prerequisites h3, .equipment h3 {
   margin-top: 0;
-  color: var(--digitakt-orange);
+  color: var(--elektron-orange);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 1.1rem;
 }
 
 .prerequisites ul, .equipment ul {
-  color: var(--digitakt-light-grey);
+  color: var(--elektron-light-grey);
 }
 
 .prerequisites li, .equipment li {
@@ -612,17 +612,17 @@ li {
 
 /* Related guides */
 .related-guides {
-  background: linear-gradient(135deg, var(--digitakt-dark-grey), var(--digitakt-medium-grey));
+  background: linear-gradient(135deg, var(--elektron-dark-grey), var(--elektron-medium-grey));
   border-radius: 12px;
   padding: 2rem;
   margin-top: 3rem;
-  border: 2px solid var(--digitakt-medium-grey);
-  border-top: 4px solid var(--digitakt-accent);
+  border: 2px solid var(--elektron-medium-grey);
+  border-top: 4px solid var(--elektron-accent);
 }
 
 .related-guides h3 {
   margin-top: 0;
-  color: var(--digitakt-accent);
+  color: var(--elektron-accent);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -630,26 +630,26 @@ li {
 /* Code blocks - LCD screen inspired */
 pre, code {
   background-color: #000;
-  color: var(--digitakt-accent);
-  border: 1px solid var(--digitakt-medium-grey);
+  color: var(--elektron-accent);
+  border: 1px solid var(--elektron-medium-grey);
   font-family: 'Courier New', monospace;
 }
 
 pre {
   padding: 1rem;
   border-radius: 8px;
-  border-left: 4px solid var(--digitakt-orange);
+  border-left: 4px solid var(--elektron-orange);
 }
 
 /* Tables - step sequencer grid inspired */
 table {
-  background-color: var(--digitakt-dark-grey);
-  border: 2px solid var(--digitakt-medium-grey);
+  background-color: var(--elektron-dark-grey);
+  border: 2px solid var(--elektron-medium-grey);
   border-radius: 8px;
 }
 
 th {
-  background-color: var(--digitakt-orange);
+  background-color: var(--elektron-orange);
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
@@ -657,8 +657,8 @@ th {
 }
 
 td {
-  border-bottom: 1px solid var(--digitakt-medium-grey);
-  color: var(--digitakt-light-grey);
+  border-bottom: 1px solid var(--elektron-medium-grey);
+  color: var(--elektron-light-grey);
 }
 
 /* Responsive design */
@@ -691,26 +691,26 @@ td {
 /* Lead text styling */
 .lead {
   font-size: 1.3rem;
-  color: var(--digitakt-light-grey);
+  color: var(--elektron-light-grey);
   margin-bottom: 3rem;
   font-style: italic;
   text-align: center;
   padding: 1rem;
-  border-top: 2px solid var(--digitakt-orange);
-  border-bottom: 2px solid var(--digitakt-orange);
+  border-top: 2px solid var(--elektron-orange);
+  border-bottom: 2px solid var(--elektron-orange);
 }
 
 /* Guide list styling - step list inspired */
 .guide-list {
   list-style: none;
   padding: 0;
-  background: var(--digitakt-dark-grey);
+  background: var(--elektron-dark-grey);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .guide-list li {
-  border-bottom: 1px solid var(--digitakt-medium-grey);
+  border-bottom: 1px solid var(--elektron-medium-grey);
   padding: 1.5rem;
   transition: background-color 0.2s ease;
   position: relative;
@@ -725,7 +725,7 @@ td {
 }
 
 .guide-list .tags {
-  color: var(--digitakt-light-grey);
+  color: var(--elektron-light-grey);
   font-size: 0.85rem;
   margin-left: 1rem;
   font-style: italic;

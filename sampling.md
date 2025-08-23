@@ -5,7 +5,7 @@ layout: default
 
 # 🎤 Sampling
 
-Master the art of sampling on the Digitakt - from basic recording techniques to advanced manipulation methods.
+Master the art of sampling across Elektron devices - from basic recording techniques on the Digitakt to advanced manipulation methods on the Octatrack.
 
 ## All Sampling Guides
 

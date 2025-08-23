@@ -3,21 +3,21 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="page-heading">Digitakt Guides</h1>
+  <h1 class="page-heading">Elektron Guides</h1>
   
-  <p class="lead">Master your Elektron Digitakt with our comprehensive collection of how-to guides and workflows.</p>
+  <p class="lead">Master your Elektron instruments with our comprehensive collection of how-to guides and workflows for Digitakt, Digitone, Octatrack, Analog Rytm, and more.</p>
 
   <div class="guide-categories">
     <h2>Browse by Category</h2>
     <div class="category-grid">
       <div class="category-card">
         <h3><a href="{{ "/sampling/" | relative_url }}">🎤 Sampling</a></h3>
-        <p>Recording, editing, and managing samples</p>
+        <p>Recording, editing, and managing samples (Digitakt, Octatrack)</p>
       </div>
       
       <div class="category-card">
         <h3><a href="{{ "/beat-making/" | relative_url }}">🥁 Beat Making</a></h3>
-        <p>Drum programming and rhythm creation</p>
+        <p>Drum programming and rhythm creation (all devices)</p>
       </div>
       
       <div class="category-card">

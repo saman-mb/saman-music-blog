@@ -1,7 +1,7 @@
 # Site settings
-title: "Digitakt Guides"
-description: "Comprehensive how-to guides for the Elektron Digitakt"
-baseurl: "/digitakt-guides"
+title: "Elektron Guides"
+description: "Comprehensive how-to guides for Elektron instruments and workflows"
+baseurl: "/elektron-guides"
 url: "https://yourusername.github.io"
 
 # Build settings

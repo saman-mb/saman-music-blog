@@ -1,31 +1,38 @@
-# Digitakt Guides
+# Elektron Guides
 
-A comprehensive collection of how-to guides and workflows for the Elektron Digitakt sampler/drum machine.
+A comprehensive collection of how-to guides and workflows for Elektron instruments including Digitakt, Digitone, Analog Rytm, Octatrack, and more.
 
 ## 🎵 About
 
-This documentation site contains step-by-step guides for various Digitakt workflows, from basic sampling techniques to advanced production methods. Whether you're creating UK Drill beats, jungle breakbeats, or experimental soundscapes, you'll find detailed tutorials to help you master your Digitakt.
+This documentation site contains step-by-step guides for various Elektron workflows, from basic sampling techniques on the Digitakt to advanced synthesis on the Digitone, complex sequencing on the Octatrack, and analog drum programming on the Analog Rytm. Whether you're creating UK Drill beats, jungle breakbeats, ambient soundscapes, or experimental electronic music, you'll find detailed tutorials to help you master your Elektron gear.
 
 ## 📚 Documentation Structure
 
-The guides are organized by category and tagged by topic for easy navigation:
+The guides are organized by category and device, with tags for easy cross-referencing:
 
-- **[Sampling](/docs/sampling/)** - Techniques for recording, editing, and managing samples
-- **[Beat Making](/docs/beat-making/)** - Drum programming and rhythm creation
-- **[Sound Design](/docs/sound-design/)** - Creating and manipulating sounds
+- **[Sampling](/docs/sampling/)** - Techniques for recording, editing, and managing samples (Digitakt, Octatrack)
+- **[Beat Making](/docs/beat-making/)** - Drum programming and rhythm creation (all devices)
+- **[Sound Design](/docs/sound-design/)** - Creating and manipulating sounds (Digitone, Analog series)
+- **[Synthesis](/docs/synthesis/)** - FM synthesis techniques and sound programming (Digitone)
+- **[Sequencing](/docs/sequencing/)** - Advanced sequencing techniques across all devices
 - **[Effects & Processing](/docs/effects/)** - Using built-in effects and processing
 - **[Project Management](/docs/project-management/)** - Organizing projects, patterns, and presets
-- **[Performance](/docs/performance/)** - Live performance techniques and tips
+- **[Performance](/docs/performance/)** - Live performance techniques and device integration
 
 ## 🏷️ Topic Tags
 
 Guides are tagged with relevant topics for cross-category discovery:
 
+- `digitakt` - Digitakt-specific workflows
+- `digitone` - Digitone synthesis and sequencing
+- `octatrack` - Octatrack sampling and live performance
+- `analog-rytm` - Analog Rytm drum machine techniques
 - `uk-drill` - UK Drill production techniques
 - `jungle` - Jungle and drum & bass workflows
 - `hip-hop` - Hip-hop production methods
 - `breakbeats` - Breakbeat chopping and manipulation
 - `bass-design` - Bass sound creation and programming
+- `fm-synthesis` - FM synthesis techniques
 - `compression` - Compression and dynamics processing
 - `sidechain` - Sidechain compression techniques
 - `presets` - Creating and managing presets

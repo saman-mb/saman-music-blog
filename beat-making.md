@@ -5,7 +5,7 @@ layout: default
 
 # 🥁 Beat Making
 
-Learn drum programming, rhythm creation, and beat construction techniques for various genres.
+Learn drum programming, rhythm creation, and beat construction techniques across all Elektron devices for various genres.
 
 ## All Beat Making Guides
 
