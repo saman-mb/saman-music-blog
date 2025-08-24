@@ -1,10 +1,12 @@
 ---
 title: "Creating a Reusable UK Drill Kit on Digitakt"
-description: "Learn how to create a comprehensive UK Drill kit with layered drums, pitched kicks, and crispy hi-hats using the Digitakt that you can reuse across projects."
-category: "Beat Making"
+description: "Research into creating comprehensive UK Drill kits with layered drums, pitched kicks, and crispy hi-hats using the Digitakt workflow."
+category: "Production Techniques"
 difficulty: "intermediate"
 duration: "45 minutes"
-tags: ["digitakt", "uk-drill", "kits", "beat-making", "drums", "presets"]
+tags: ["elektron-digitakt", "uk-drill", "production-techniques", "workflow-documentation", "beat-making"]
+date: 2024-08-23
+author: "Saman"
 prerequisites:
   - "Basic Digitakt navigation"
   - "Understanding of kit structure"

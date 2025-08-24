@@ -1,40 +1,46 @@
-# Elektron Guides
+# Saman's Music Research
 
-A comprehensive collection of how-to guides and workflows for Elektron instruments including Digitakt, Digitone, Analog Rytm, Octatrack, and more.
+A personal blog documenting my research into music production, gear analysis, sampling techniques, and electronic music workflows. Written by Saman, a software engineer and music enthusiast based in London.
 
 ## 🎵 About
 
-This documentation site contains step-by-step guides for various Elektron workflows, from basic sampling techniques on the Digitakt to advanced synthesis on the Digitone, complex sequencing on the Octatrack, and analog drum programming on the Analog Rytm. Whether you're creating UK Drill beats, jungle breakbeats, ambient soundscapes, or experimental electronic music, you'll find detailed tutorials to help you master your Elektron gear.
+This site serves as my research journal where I document deep dives into music gear, production techniques, sampling research, and technical analysis of electronic music. From Elektron hardware workflows to obscure sample archaeology, I explore the intersection of technology and music creation.
 
-## 📚 Documentation Structure
+## 📚 Research Areas
 
-The guides are organized by category and device, with tags for easy cross-referencing:
+My research covers several interconnected areas:
 
-- **[Sampling](/docs/sampling/)** - Techniques for recording, editing, and managing samples (Digitakt, Octatrack)
-- **[Beat Making](/docs/beat-making/)** - Drum programming and rhythm creation (all devices)
-- **[Sound Design](/docs/sound-design/)** - Creating and manipulating sounds (Digitone, Analog series)
-- **[Synthesis](/docs/synthesis/)** - FM synthesis techniques and sound programming (Digitone)
-- **[Sequencing](/docs/sequencing/)** - Advanced sequencing techniques across all devices
-- **[Effects & Processing](/docs/effects/)** - Using built-in effects and processing
-- **[Project Management](/docs/project-management/)** - Organizing projects, patterns, and presets
-- **[Performance](/docs/performance/)** - Live performance techniques and device integration
+- **[Gear Analysis](/gear-analysis/)** - In-depth reviews and technical analysis of music hardware and software
+- **[Sampling Research](/sampling-research/)** - Archaeological digs into sample sources, stem hunting, and remix research  
+- **[Production Techniques](/production-techniques/)** - Workflow documentation and technique analysis across various genres
+- **[Hardware Workflows](/hardware-workflows/)** - Device-specific guides and integration techniques
+- **[Music Archaeology](/music-archaeology/)** - Research into classic tracks, their construction, and sample sources
 
-## 🏷️ Topic Tags
+## 🏷️ Research Tags
 
-Guides are tagged with relevant topics for cross-category discovery:
+Articles are tagged by device, technique, genre, and research type:
 
-- `digitakt` - Digitakt-specific workflows
-- `digitone` - Digitone synthesis and sequencing
-- `octatrack` - Octatrack sampling and live performance
-- `analog-rytm` - Analog Rytm drum machine techniques
-- `uk-drill` - UK Drill production techniques
-- `jungle` - Jungle and drum & bass workflows
-- `hip-hop` - Hip-hop production methods
-- `breakbeats` - Breakbeat chopping and manipulation
-- `bass-design` - Bass sound creation and programming
-- `fm-synthesis` - FM synthesis techniques
-- `compression` - Compression and dynamics processing
-- `sidechain` - Sidechain compression techniques
+**Hardware & Gear:**
+- `elektron-digitakt` - Digitakt-specific research
+- `elektron-digitone` - Digitone synthesis and workflows
+- `elektron-octatrack` - Octatrack performance techniques
+- `elektron-analog-rytm` - Analog Rytm drum programming
+- `hardware-analysis` - General gear research
+- `software-tools` - DAW and plugin research
+
+**Techniques & Genres:**
+- `sampling-archaeology` - Sample source research and stem hunting
+- `remix-research` - Remix techniques and source material analysis
+- `uk-drill` - UK Drill production analysis
+- `breakbeat-research` - Breakbeat and jungle techniques
+- `fm-synthesis` - FM synthesis research and programming
+- `sound-design` - Sound creation and manipulation techniques
+
+**Research Types:**
+- `track-analysis` - Deconstruction of specific tracks
+- `workflow-documentation` - Process and technique documentation
+- `gear-comparison` - Comparative analysis between devices
+- `sample-archaeology` - Deep dives into sample sources and history
 - `presets` - Creating and managing presets
 - `kits` - Kit creation and organization
 - `beginner` - Beginner-friendly guides

@@ -1,9 +1,15 @@
 # Site settings
-title: "Elektron Guides"
-description: "Comprehensive how-to guides for Elektron instruments and workflows"
-baseurl: "/elektron-guides"
+title: "Saman's Music Research"
+description: "Music production research, gear analysis, and techniques by Saman - a software engineer and music enthusiast in London"
+baseurl: "/music-research"
 url: "https://yourusername.github.io"
 
+# Author information
+author:
+  name: "Saman"
+  bio: "Software engineer and music production enthusiast based in London. Researching music gear, sampling techniques, and production methods."
+  location: "London, UK"
+  
 # Build settings
 markdown: kramdown
 highlighter: rouge

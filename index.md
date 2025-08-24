@@ -3,21 +3,26 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="page-heading">Elektron Guides</h1>
+  <h1 class="page-heading">Saman's Music Research</h1>
   
-  <p class="lead">Master your Elektron instruments with our comprehensive collection of how-to guides and workflows for Digitakt, Digitone, Octatrack, Analog Rytm, and more.</p>
+  <p class="lead">Welcome to my research journal documenting music production techniques, gear analysis, and sampling archaeology. I'm Saman, a software engineer and music enthusiast based in London, exploring the intersection of technology and music creation.</p>
 
-  <div class="guide-categories">
-    <h2>Browse by Category</h2>
+  <div class="about-author">
+    <h2>About Me</h2>
+    <p>I'm passionate about understanding how music is made—from the technical aspects of hardware and software to the creative processes behind iconic tracks. This site documents my ongoing research into music gear, production workflows, and the archaeology of electronic music.</p>
+  </div>
+
+  <div class="research-categories">
+    <h2>Research Areas</h2>
     <div class="category-grid">
       <div class="category-card">
-        <h3><a href="{{ "/sampling/" | relative_url }}">🎤 Sampling</a></h3>
-        <p>Recording, editing, and managing samples (Digitakt, Octatrack)</p>
+        <h3><a href="{{ "/gear-analysis/" | relative_url }}">🔧 Gear Analysis</a></h3>
+        <p>In-depth hardware and software analysis</p>
       </div>
       
       <div class="category-card">
-        <h3><a href="{{ "/beat-making/" | relative_url }}">🥁 Beat Making</a></h3>
-        <p>Drum programming and rhythm creation (all devices)</p>
+        <h3><a href="{{ "/sampling-research/" | relative_url }}">🎤 Sampling Research</a></h3>
+        <p>Sample archaeology and stem hunting</p>
       </div>
       
       <div class="category-card">

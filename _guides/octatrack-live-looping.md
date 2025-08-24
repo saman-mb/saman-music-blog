@@ -1,10 +1,12 @@
 ---
 title: "Live Looping with Octatrack"
-description: "Master real-time sampling and looping techniques for live performance using the Octatrack's powerful recording capabilities."
-category: "Performance"
+description: "Research into real-time sampling and looping techniques for live performance using the Octatrack's advanced recording capabilities."
+category: "Gear Analysis"
 difficulty: "advanced"
 duration: "60 minutes"
-tags: ["octatrack", "live-performance", "looping", "sampling", "recording"]
+tags: ["elektron-octatrack", "live-performance", "sampling-research", "workflow-documentation", "hardware-analysis"]
+date: 2024-08-23
+author: "Saman"
 prerequisites:
   - "Solid Octatrack navigation skills"
   - "Understanding of crossfader functionality"

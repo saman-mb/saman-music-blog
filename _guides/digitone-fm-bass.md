@@ -1,10 +1,12 @@
 ---
 title: "FM Bass Programming on Digitone"
-description: "Learn to create powerful FM bass sounds using the Digitone's 4-operator FM synthesis engine."
-category: "Sound Design"
+description: "Research into creating powerful FM bass sounds using the Digitone's 4-operator FM synthesis engine and workflow optimization."
+category: "Gear Analysis"
 difficulty: "intermediate" 
 duration: "30 minutes"
-tags: ["digitone", "fm-synthesis", "bass-design", "sound-design"]
+tags: ["elektron-digitone", "fm-synthesis", "sound-design", "workflow-documentation", "bass-design"]
+date: 2024-08-23
+author: "Saman"
 prerequisites:
   - "Basic Digitone navigation"
   - "Understanding of FM synthesis principles"
