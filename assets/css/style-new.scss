@@ -4,6 +4,9 @@
 /* Saman's Music Research - Professional Academic Design */
 /* Sophisticated, minimal theme inspired by research journals and contemporary design */
 
+/* Typography Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
 /* Color Variables - Sophisticated Academic Palette */
 :root {
   /* Primary Colors */
@@ -32,23 +35,6 @@
   --border-medium: #cbd5e0;
   --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05);
   --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-/* Dark mode variables and overrides */
-:root.dark-mode {
-  --bg-primary: #0b0f14;
-  --bg-secondary: #071019;
-  --bg-accent: #0f1720;
-  --text-primary: #e6eef6;
-  --text-secondary: #c3d0df;
-  --text-muted: #9aa7b6;
-  --primary-navy: #bcd1e6;
-  --accent-blue: #63b3ed;
-  --accent-teal: #4fd1c5;
-  --border-light: rgba(255,255,255,0.06);
-  --border-medium: rgba(255,255,255,0.08);
-  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.5);
-  --shadow-medium: 0 6px 18px rgba(0,0,0,0.6);
 }
 
 /* Reset and Base Styles */
@@ -154,16 +140,29 @@ a:visited {
 .header-left {
   display: flex;
   align-items: center;
+  gap: 1.5rem;
+}
+
+.site-logo img {
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: var(--shadow-subtle);
+  transition: box-shadow 0.2s ease;
+}
+
+.site-logo:hover img {
+  box-shadow: var(--shadow-medium);
 }
 
 .site-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-navy);
   text-decoration: none;
   letter-spacing: -0.01em;
-  padding: 0.5rem 0;
 }
 
 .site-title:hover {
@@ -171,37 +170,10 @@ a:visited {
   border-bottom: none;
 }
 
-/* Toggle button in header */
-.header-right {
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-}
-
-.dark-toggle {
-  background: transparent;
-  border: 1px solid var(--border-light);
-  color: var(--text-secondary);
-  padding: 0.35rem 0.5rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.dark-toggle .icon-moon { display: none; }
-
-.dark-toggle:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(99,179,237,0.12);
-}
-
 /* Navigation */
 .site-nav {
   display: flex;
-  gap: 2.5rem; /* increased spacing between menu groups */
+  gap: 2rem;
   align-items: center;
 }
 
@@ -219,72 +191,16 @@ a:visited {
   font-weight: 500;
   color: var(--text-secondary);
   text-decoration: none;
-  padding: 0.5rem 0.75rem; /* add horizontal padding to give breathing room */
-  margin-left: 0.15rem; /* slight separation between inline links */
+  padding: 0.5rem 0;
   border-bottom: 2px solid transparent;
-  transition: all 0.18s ease;
+  transition: all 0.2s ease;
   text-transform: none;
   letter-spacing: 0;
-  border-radius: 6px; /* subtle rounded hit target */
 }
 
 .site-nav .page-link:hover {
   color: var(--primary-navy);
   border-bottom-color: var(--accent-blue);
-  background-color: rgba(49,130,206,0.04); /* gentle hover background to visually separate items */
-}
-
-/* Active navigation state */
-.site-nav .page-link.active,
-.site-nav .page-link[aria-current="page"] {
-  color: var(--accent-blue);
-  font-weight: 600;
-  border-bottom-color: var(--accent-blue);
-}
-
-/* Dark-mode header & nav overrides */
-:root.dark-mode .site-header {
-  background-color: rgba(11,15,20,0.9);
-  border-bottom: 1px solid var(--border-medium);
-  backdrop-filter: none;
-}
-
-:root.dark-mode .site-header .wrapper {
-  box-shadow: none;
-}
-
-:root.dark-mode .site-title {
-  color: var(--primary-navy);
-}
-
-:root.dark-mode .site-nav .page-link {
-  color: var(--text-secondary);
-  background-color: transparent;
-  border-bottom-color: transparent;
-}
-
-:root.dark-mode .site-nav .page-link:hover {
-  color: var(--accent-blue);
-  background-color: rgba(99,179,237,0.04);
-  border-bottom-color: var(--accent-blue);
-}
-
-:root.dark-mode .site-nav .page-link.active,
-:root.dark-mode .site-nav .page-link[aria-current="page"] {
-  color: var(--accent-blue);
-  font-weight: 600;
-  border-bottom-color: var(--accent-blue);
-  background-color: rgba(49,130,206,0.04);
-}
-
-/* ensure burger/menu icon is visible in dark mode */
-:root.dark-mode .menu-icon svg path {
-  fill: var(--text-secondary);
-}
-
-/* mobile nav trigger label styling */
-:root.dark-mode .nav-trigger + label {
-  color: var(--text-secondary);
 }
 
 /* Main Content Layout */
@@ -429,69 +345,6 @@ a:visited {
   font-style: italic;
 }
 
-/* Guide / article meta spacing tweaks */
-.guide-info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.6rem 1rem; /* vertical gap then horizontal gap */
-  margin-bottom: 1.25rem; /* add breathing room below the meta row */
-}
-
-/* Make difficulty pill slightly larger and spaced */
-.guide-info .difficulty {
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
-  background-color: var(--bg-accent);
-  color: var(--text-secondary);
-  font-weight: 600;
-}
-
-/* Duration and category spacing */
-.guide-info .duration,
-.guide-info .category {
-  color: var(--text-secondary);
-  padding: 0.25rem 0.6rem;
-  border-radius: 8px;
-  background-color: transparent;
-  font-weight: 500;
-}
-
-/* Increase gap between tag pills and give them more breathing room */
-.tags, .guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem; /* increase spacing between tags */
-  margin-top: 0.5rem; /* separate tags from metadata row */
-}
-
-.tag {
-  padding: 0.45rem 1rem; /* slightly larger tap target */
-  border-radius: 999px;
-  font-size: 0.9rem;
-}
-
-/* Description spacing */
-.guide-description {
-  margin-top: 1rem; /* create clear separation from tags */
-  margin-bottom: 1.5rem;
-}
-
-/* Dark-mode tweaks to keep spacing and contrast consistent */
-:root.dark-mode .guide-info {
-  gap: 0.6rem 1rem;
-}
-
-:root.dark-mode .tags, :root.dark-mode .guide-tags {
-  gap: 0.75rem;
-}
-
-:root.dark-mode .tag {
-  /* keep tag colours readable in dark */
-  background-color: var(--accent-blue);
-  color: #07202a;
-}
-
 .meta {
   display: flex;
   gap: 1rem;
@@ -609,73 +462,6 @@ pre code {
   font-size: 0.9rem;
 }
 
-/* About Page Styling */
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* center avatar and text */
-  margin: 2rem 0 3rem;
-}
-
-.profile-avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-size: cover; /* ensure the image fills the circle without letterboxing */
-  background-position: center center; /* center focal point */
-  background-repeat: no-repeat;
-  box-shadow: var(--shadow-subtle);
-  margin-bottom: 1.25rem;
-  border: 3px solid var(--border-light);
-  transition: all 0.3s ease;
-}
-
-/* Fallback: if the avatar appears squashed on very narrow viewports, use cover */
-@media (max-width: 420px) {
-  .profile-avatar {
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
-.profile-avatar:hover {
-  box-shadow: var(--shadow-medium);
-  transform: scale(1.02);
-}
-
-.profile-intro {
-  text-align: center;
-  max-width: 760px;
-  margin: 0 auto 1.75rem;
-  color: var(--text-primary);
-  line-height: 1.7;
-  font-size: 1.05rem;
-}
-
-/* Research Approach */
-.research-approach {
-  margin: 4rem 0;
-}
-
-.research-approach h2 {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.research-approach p {
-  margin-bottom: 1.5rem;
-  text-align: justify;
-}
-
-.research-approach ul {
-  margin-left: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.research-approach li {
-  margin-bottom: 0.5rem;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .site-header .wrapper {
@@ -693,12 +479,11 @@ pre code {
   .site-nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.25rem; /* maintain comfortable spacing on small screens */
+    gap: 1rem;
   }
   
   .site-nav .page-link {
-    font-size: 0.95rem;
-    padding: 0.55rem 0.9rem; /* slightly larger touch targets on mobile */
+    font-size: 0.9rem;
   }
   
   .wrapper,

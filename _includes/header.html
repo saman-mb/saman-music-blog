@@ -28,5 +28,74 @@
         </div>
       </nav>
     {%- endif -%}
+
+    <!-- header-right: dark mode toggle -->
+    <div class="header-right">
+      <button id="dark-mode-toggle" class="dark-toggle" aria-pressed="false" title="Toggle dark mode">
+        <span class="icon-sun" aria-hidden="true">☀️</span>
+        <span class="icon-moon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
   </div>
 </header>
+
+<script>
+  // Initialise theme on page load and bind toggle
+  (function() {
+    var root = document.documentElement;
+    var toggle = document.getElementById('dark-mode-toggle');
+    if (!toggle) return;
+
+    function applyTheme(t) {
+      if (t === 'dark') {
+        root.classList.add('dark-mode');
+        toggle.setAttribute('aria-pressed', 'true');
+      } else {
+        root.classList.remove('dark-mode');
+        toggle.setAttribute('aria-pressed', 'false');
+      }
+    }
+
+    // Determine initial preference: localStorage -> system preference -> light
+    var stored = null;
+    try { stored = localStorage.getItem('theme'); } catch (e) { stored = null; }
+
+    if (stored === 'dark' || (!stored && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      applyTheme('dark');
+    } else {
+      applyTheme('light');
+    }
+
+    // Sync icon visuals
+    function updateIcons() {
+      var sun = toggle.querySelector('.icon-sun');
+      var moon = toggle.querySelector('.icon-moon');
+      if (root.classList.contains('dark-mode')) {
+        if (sun) sun.style.display = 'none';
+        if (moon) moon.style.display = 'inline';
+      } else {
+        if (sun) sun.style.display = 'inline';
+        if (moon) moon.style.display = 'none';
+      }
+    }
+
+    updateIcons();
+
+    toggle.addEventListener('click', function() {
+      var isDark = root.classList.toggle('dark-mode');
+      try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch(e){}
+      toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      updateIcons();
+    });
+
+    // Listen for system preference changes if user hasn't explicitly set a preference
+    try {
+      if (!stored && window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+          applyTheme(e.matches ? 'dark' : 'light');
+          updateIcons();
+        });
+      }
+    } catch (e) { /* ignore */ }
+  })();
+</script>
