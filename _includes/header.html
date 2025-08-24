@@ -4,9 +4,6 @@
 <header class="site-header">
   <div class="wrapper">
     <div class="header-left">
-      <a class="site-logo" href="{{ "/" | relative_url }}">
-        <img src="{{ "/assets/css/images/elektron_logo_400x400.jpg" | relative_url }}" alt="Elektron Logo" />
-      </a>
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </div>
 
@@ -22,12 +19,12 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="{{ "/" | relative_url }}">Home</a>
-          <a class="page-link" href="{{ "/gear-analysis/" | relative_url }}">Gear Analysis</a>
-          <a class="page-link" href="{{ "/sampling-research/" | relative_url }}">Sampling Research</a>
-          <a class="page-link" href="{{ "/production-techniques/" | relative_url }}">Production Techniques</a>
-          <a class="page-link" href="{{ "/music-archaeology/" | relative_url }}">Music Archaeology</a>
-          <a class="page-link" href="{{ "/about/" | relative_url }}">About</a>
+          <a class="page-link {% if page.url == '/' %}active{% endif %}" href="{{ "/" | relative_url }}">Home</a>
+          <a class="page-link {% if page.url contains '/gear-analysis/' %}active{% endif %}" href="{{ "/gear-analysis/" | relative_url }}">Gear Analysis</a>
+          <a class="page-link {% if page.url contains '/sampling-research/' %}active{% endif %}" href="{{ "/sampling-research/" | relative_url }}">Sampling Research</a>
+          <a class="page-link {% if page.url contains '/production-techniques/' %}active{% endif %}" href="{{ "/production-techniques/" | relative_url }}">Production Techniques</a>
+          <a class="page-link {% if page.url contains '/music-archaeology/' %}active{% endif %}" href="{{ "/music-archaeology/" | relative_url }}">Music Archaeology</a>
+          <a class="page-link {% if page.url contains '/about/' %}active{% endif %}" href="{{ "/about/" | relative_url }}">About</a>
         </div>
       </nav>
     {%- endif -%}

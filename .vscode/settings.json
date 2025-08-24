@@ -1,14 +1,8 @@
-{
-  "github.copilot.chat.experimental.modelContextProtocol.enabled": true,
-  "github.copilot.chat.experimental.modelContextProtocol.servers": {
-    "digitakt-guides": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem"],
-      "env": {
-        "ALLOWED_DIRECTORIES": "/Users/saman/digitakt-guides"
-      }
-    }
-  },
+{ 
+  // GitHub Copilot Chat Instructions
+  "chat.promptFiles": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  
   "files.associations": {
     "*.md": "markdown"
   },
@@ -28,7 +22,4 @@
       "other": "off"
     }
   },
-  "yaml.schemas": {
-    "https://json.schemastore.org/jekyll.json": "_config.yml"
-  }
 }
