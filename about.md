@@ -19,11 +19,11 @@ permalink: /about/
 ## Background
 
 My journey bridges technology and music: I'm a self-taught musician with a creative spirit who took an academic path through Music Informatics (BSc, 1st Class Hons), studying computer music, audio programming, and DSP. After graduating, I moved fully into software engineering, spending the last decade working across mobile and streaming platforms, low-latency audio systems, and large-scale SaaS products.
-
+∑
 While my career is in software engineering, this blog intentionally focuses on music research — the production techniques, sampling archaeology, and creative workflows that inspire my practice. My engineering background gives me tools to analyze and reproduce sounds precisely, but the research here is driven by artistic curiosity first.
 
 ## Musical Background
-
+w
 My academic work in Music Informatics was centered at the intersection of technology and creative expression. My third-year dissertation project, "iChaOsc," was a cellular automaton-driven granular synthesizer for iPhone that explored algorithmic composition and novel sound design interfaces.
 
 I've extensively worked with SuperCollider for synthesis, live coding performances, and experimenting with musical interfaces. This work allowed me to explore how technical implementation influences creative workflows and sound design possibilities. This confluence of programming and sound creation informs how I approach music production tools and sampling research today.
